@@ -137,6 +137,7 @@ main { margin-left: var(--sidebar-width); flex: 1; }
         box-shadow: -5px 5px 15px rgba(0,0,0,0.1);
         border: 1px solid var(--border);
         margin-top: 0;
+        
     }
 
     .nav-content.active { display: block; }
