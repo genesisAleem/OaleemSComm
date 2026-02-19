@@ -218,3 +218,22 @@ main { margin-left: var(--sidebar-width); flex: 1; width: 100%; }
     .bento-item { height: 300px; }
     .carousel-track img { height: 280px; }
 }
+/* Adjust the column ratio for the Creative Approach/PHC section */
+.creative-approach {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Gives the image twice as much space as the text */
+    gap: 40px; /* Adds space between the text and the image */
+    align-items: center; /* Vertically centers the text next to the baby image */
+    margin: 80px 0;
+}
+
+/* Ensure the text stays readable on smaller screens */
+.creative-approach .cs-col.left {
+    padding-right: 20px;
+}
+
+.creative-approach .body-text {
+    max-width: 400px; /* Prevents the text from stretching too wide */
+    font-size: 1rem;
+    line-height: 1.5;
+}
