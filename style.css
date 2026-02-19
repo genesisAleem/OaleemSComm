@@ -158,4 +158,63 @@ main { margin-left: var(--sidebar-width); flex: 1; width: 100%; }
 }
 .bento-item:hover img { transform: scale(1.08); filter: grayscale(0%); }
 
-.item-1 { grid-column: span 2
+.item-1 { grid-column: span 2; grid-row: span 2; }
+.item-4 { grid-column: span 2; }
+
+/* =========================================
+   5. SPECIAL SECTIONS (Pillars & Carousel)
+   ========================================= */
+.strategy-flex-row { display: flex; gap: 15px; margin: 40px 0; }
+.strat-column {
+    flex: 1; height: 180px; padding: 25px; color: #fff; font-weight: 700;
+    display: flex; align-items: flex-end; border-radius: 4px; line-height: 1.2;
+}
+.orange { background: var(--brand-orange); }
+.purple { background: var(--brand-purple); }
+.green  { background: var(--brand-green); }
+.pink   { background: var(--brand-pink); }
+
+.carousel-container { width: 100%; overflow-x: auto; padding: 20px 0; scrollbar-width: thin; }
+.carousel-track { display: flex; gap: 20px; width: max-content; }
+.carousel-track img { height: 450px; width: auto; border-radius: 4px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+
+/* =========================================
+   6. RESPONSIVENESS
+   ========================================= */
+
+/* Tablet: Horizontal Navigation */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .app-wrapper { flex-direction: column; }
+    .sidebar {
+        width: 100%; height: auto; position: relative;
+        flex-direction: row; align-items: center; justify-content: space-between;
+        padding: 20px 40px; border-right: none; border-bottom: 1px solid var(--border);
+    }
+    main { margin-left: 0; }
+    .nav-content { margin-top: 0; flex-direction: row; align-items: center; gap: 30px; }
+    .nav-menu { display: flex; gap: 20px; }
+    .nav-item { padding: 0; }
+    .nav-footer { display: flex; gap: 15px; }
+}
+
+/* Mobile: Hamburger Menu */
+@media (max-width: 768px) {
+    .app-wrapper { flex-direction: column; }
+    main { margin-left: 0; }
+    .sidebar {
+        width: 100%; height: auto; position: relative;
+        padding: 20px; border-right: none; border-bottom: 1px solid var(--border);
+    }
+    .menu-toggle { display: block; }
+    .nav-content {
+        display: none; position: absolute; top: 100%; right: 0;
+        width: 220px; background: white; padding: 20px;
+        box-shadow: -5px 5px 15px rgba(0,0,0,0.1); border: 1px solid var(--border);
+    }
+    .nav-content.active { display: flex; }
+    
+    .content-container { padding: 40px 20px; }
+    .cs-grid, .strategy-flex-row, .bento-grid { grid-template-columns: 1fr; display: flex; flex-direction: column; }
+    .bento-item { height: 300px; }
+    .carousel-track img { height: 280px; }
+}
