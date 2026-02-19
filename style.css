@@ -318,3 +318,23 @@ main {
     font-size: clamp(2rem, 8vw, 5rem); /* Responsive font size */
     font-weight: 800;
 }
+.carousel-container {
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px 0;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+}
+
+.carousel-track img {
+    height: 450px;
+    width: auto;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
