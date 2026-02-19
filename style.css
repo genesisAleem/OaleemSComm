@@ -284,3 +284,22 @@ main {
     .cover-image-container { height: 50vh; }
     .content-container { padding: 40px 20px; }
 }
+.hero-cover-wrapper {
+    position: relative; /* Allows overlay to sit on top */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: white; /* Or whatever color pops against BGedit.png */
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3); /* Makes text readable */
+}
+
+.handwritten-headline {
+    font-size: clamp(2rem, 8vw, 5rem); /* Responsive font size */
+    font-weight: 800;
+}
