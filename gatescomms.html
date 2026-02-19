@@ -3,102 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gates Foundation | Redo Case Study</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Redo | Gates Foundation</title>
     <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="app-wrapper">
     <nav class="sidebar">
         <div class="nav-header">
-            <a href="index.html" class="side-logo">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 14-4-4 4-4"/><path d="M5 10h11a4 4 0 1 1 0 8h-1"/></svg>
-                Redo
-            </a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-            </button>
+            <a href="index.html" class="side-logo">Redo</a>
         </div>
-        
-        <div class="nav-content" id="navContent">
+        <div class="nav-content">
             <ul class="nav-menu">
                 <a href="index.html"><li class="nav-item">Home Page<span>01</span></li></a>
-                <a href="gatescomms.html"><li class="nav-item active">Gates Foundation<span>02</span></li></a>
+                <li class="nav-item active">Gates Foundation<span>02</span></li>
                 <li class="nav-item">Union Bank<span>03</span></li>
-                <li class="nav-item">Visual Design<span>04</span></li>
-                <li class="nav-item">Interaction Design<span>05</span></li>
-                <li class="nav-item">Art Direction<span>06</span></li>
             </ul>
-            <div class="nav-footer">
-                <p>View Resume</p>
-                <p>Contact Me</p>
-            </div>
         </div>
     </nav>
 
-    <main class="case-study-main">
-        <section class="full-hero">
-            <img src="https://via.placeholder.com/1200x600" alt="Gates Foundation Building" class="main-hero-img">
+    <main>
+        <section class="project-hero">
+            <img src="placeholder-building.jpg" alt="Gates Foundation" class="hero-img">
         </section>
 
         <section class="content-container">
-            <div class="cs-grid overview">
-                <div class="cs-col">
-                    <span class="eyebrow">Overview</span>
-                    <h1 class="display-title">The future of real estate investing platform</h1>
-                    <div class="badge-row">
-                        <span class="badge">WEB DEVELOPMENT</span>
-                        <span class="badge">STRATEGY</span>
-                        <span class="badge">DESIGN SERVICES</span>
-                    </div>
+            <div class="case-study-grid">
+                <div class="grid-left">
+                    <span class="label">Overview</span>
+                    <h1 class="project-title">The future of real estate investing platform</h1>
                 </div>
-                <div class="cs-col">
-                    <p class="body-intro">The real estate industry is experiencing rapid changes due to new technology and an influx of capital lorem ipsum dolor.</p>
-                    <h3 class="section-heading">The challenge</h3>
-                    <p class="body-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <div class="grid-right">
+                    <p class="body-large">The real estate industry is experiencing rapid changes...</p>
+                    <h3>The challenge</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem...</p>
                 </div>
             </div>
 
-            <div class="wide-image-container">
-                <img src="https://via.placeholder.com/1200x300" alt="Detail View" class="wide-img">
-            </div>
-
-            <div class="cs-grid creative-approach">
-                <div class="cs-col">
-                    <p class="body-text small">The real estate industry is experiencing rapid changes due to new technology and an influx of capital lorem ipsum dolor.</p>
-                    <h2 class="display-title medium">The Creative Approach</h2>
-                    <p class="body-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
-                </div>
-                <div class="cs-col">
-                    <img src="https://via.placeholder.com/600x400" alt="Creative Approach Mockup" class="side-img">
-                </div>
-            </div>
-
-            <div class="strategy-blocks">
-                <div class="block orange">Content Playbook</div>
-                <div class="block purple">Public Relations & Events</div>
-                <div class="block green">Influencers & Thought Leaders</div>
-                <div class="block pink">Grassroot Activations</div>
-            </div>
-
-            <div class="image-gallery">
-                <img src="https://via.placeholder.com/600x400" alt="Gallery 1" class="gallery-main">
-                <div class="gallery-stack">
-                    <img src="https://via.placeholder.com/300x200" alt="Gallery 2">
-                    <img src="https://via.placeholder.com/300x200" alt="Gallery 3">
-                </div>
-            </div>
-
-            <div class="download-section">
-                <a href="#" class="download-btn">Download Full Communications Strategy</a>
+            <div class="strategy-grid">
+                <div class="strat-card orange">Mass Entertainment</div>
+                <div class="strat-card purple">Policy & Influence</div>
+                <div class="strat-card green">Influencer & Celebrity Engagement</div>
+                <div class="strat-card pink">Grassroots & Community Activation</div>
             </div>
         </section>
     </main>
 </div>
-
-<script src="script.js"></script>
 </body>
 </html>
