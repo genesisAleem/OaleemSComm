@@ -1,6 +1,7 @@
 /* =========================================
    1. BRAND VARIABLES & RESET
    ========================================= */
+
 :root {
     --primary-black: #000000;
     --text-gray: #444444;
@@ -20,6 +21,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.handwritten-headline {
+    font-family: 'Caveat', cursive; /* Adds the handwritten personality */
+    font-size: clamp(3rem, 10vw, 6rem);
+    color: white;
+    text-align: center;
+    line-height: 0.9;
 }
 
 body {
