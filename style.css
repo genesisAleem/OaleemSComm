@@ -7,13 +7,12 @@
     --light-gray: #f5f5f5;
     --border-color: #eeeeee;
     
-    /* Brand Colors from your Strategy Blocks */
+    /* Brand Colors */
     --brand-orange: #f27a41;
     --brand-purple: #a832ff;
     --brand-green: #c5e1a5;
     --brand-pink: #f48fb1;
     
-    /* Typography */
     --font-main: 'Rethink Sans', sans-serif;
 }
 
@@ -31,7 +30,7 @@ body {
 }
 
 /* =========================================
-   2. APP LAYOUT & SIDEBAR
+   2. APP LAYOUT & SIDEBAR (Fixed)
    ========================================= */
 .app-wrapper {
     display: flex;
@@ -52,9 +51,7 @@ body {
     padding: 40px 30px;
 }
 
-.nav-header {
-    margin-bottom: 60px;
-}
+.nav-header { margin-bottom: 60px; }
 
 .side-logo {
     display: flex;
@@ -66,15 +63,8 @@ body {
     color: #000;
 }
 
-.nav-menu {
-    list-style: none;
-    flex-grow: 1;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: inherit;
-}
+.nav-menu { list-style: none; flex-grow: 1; }
+.nav-menu a { text-decoration: none; color: inherit; }
 
 .nav-item {
     display: flex;
@@ -83,238 +73,24 @@ body {
     padding: 15px 0;
     font-weight: 600;
     font-size: 0.95rem;
-    border-bottom: 1px solid transparent;
     transition: color 0.3s;
     cursor: pointer;
 }
 
-.nav-item span {
-    font-size: 0.7rem;
-    color: #aaa;
-}
+.nav-item span { font-size: 0.7rem; color: #aaa; }
+.nav-item:hover, .nav-item.active { color: var(--brand-purple); }
 
-.nav-item:hover, .nav-item.active {
-    color: var(--brand-purple);
-}
-
-.nav-footer {
-    margin-top: auto;
-    font-size: 0.85rem;
-    font-weight: 600;
-}
-
-.nav-footer p {
-    margin-top: 10px;
-    cursor: pointer;
-}
+.nav-footer { margin-top: auto; font-size: 0.85rem; font-weight: 600; }
+.nav-footer p { margin-top: 10px; }
 
 /* =========================================
-   3. MAIN CONTENT & HERO
+   3. MAIN CONTENT & COVER
    ========================================= */
 main {
-    margin-left: 280px; /* Offset for Sidebar */
+    margin-left: 280px;
     flex: 1;
 }
 
-.cover-section {
-    width: 100%;
-    background: #000;
-}
-
-.hero-image-wrapper {
-    width: 100%;
-    height: 70vh;
-    overflow: hidden;
-}
-
-.cover-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.content-container {
-    padding: 80px 15% 80px 80px; /* Extra 15% margin on the right as requested */
-    max-width: 1600px;
-}
-
-/* =========================================
-   4. CASE STUDY GRID (Two-Column)
-   ========================================= */
-.cs-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 80px;
-    margin-bottom: 100px;
-}
-
-.project-title {
-    font-size: 3.5rem;
-    line-height: 1.1;
-    font-weight: 800;
-    margin-bottom: 30px;
-}
-
-.section-label {
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    font-weight: 700;
-    margin: 40px 0 20px 0;
-    display: block;
-    color: #888;
-}
-
-.body-text {
-    font-size: 1.1rem;
-    color: var(--text-gray);
-    margin-bottom: 20px;
-}
-
-/* =========================================
-   5. IMAGE BREAK & CREATIVE APPROACH
-   ========================================= */
-.image-break-section {
-    margin: 100px 0;
-}
-
-.break-img {
-    width: 100%;
-    border-radius: 4px;
-}
-
-.image-caption {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #666;
-    max-width: 600px;
-}
-
-.side-img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-
-/* =========================================
-   6. STRATEGY FLEX BLOCKS
-   ========================================= */
-.strategy-flex-row {
-    display: flex;
-    gap: 15px;
-    margin: 80px 0;
-}
-
-.strat-column {
-    flex: 1;
-    height: 180px;
-    padding: 25px;
-    color: #fff;
-    font-weight: 700;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: flex-end;
-    border-radius: 4px;
-    line-height: 1.2;
-}
-
-.orange { background: var(--brand-orange); }
-.purple { background: var(--brand-purple); }
-.green  { background: var(--brand-green); }
-.pink   { background: var(--brand-pink); }
-
-/* =========================================
-   7. BENTO GRID (Gallery)
-   ========================================= */
-.bento-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 250px;
-    gap: 20px;
-    margin: 100px 0;
-}
-
-.bento-item {
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 8px;
-    background: #eee;
-}
-
-.bento-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.bento-item:hover img {
-    transform: scale(1.05);
-}
-
-.bento-item.big {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.bento-item.wide {
-    grid-column: span 2;
-}
-
-/* =========================================
-   8. DOWNLOAD SECTION
-   ========================================= */
-.download-container {
-    text-align: center;
-    padding: 120px 0;
-    border-top: 1px solid var(--border-color);
-}
-
-.download-link {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #000;
-    text-decoration: none;
-    border-bottom: 2px solid #000;
-    padding-bottom: 5px;
-    transition: opacity 0.3s;
-}
-
-.download-link:hover {
-    opacity: 0.7;
-}
-
-/* =========================================
-   9. RESPONSIVENESS
-   ========================================= */
-@media (max-width: 1024px) {
-    .content-container {
-        padding-right: 80px;
-    }
-    .cs-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-}
-
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    main {
-        margin-left: 0;
-    }
-    .strategy-flex-row {
-        flex-direction: column;
-    }
-    .bento-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 200px;
-    }
-    .bento-item.big, .bento-item.wide {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-}
+/* Cover section with requested right margin */
+.cover-wrapper {
+    padding-right: 15%;
